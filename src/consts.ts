@@ -18,8 +18,8 @@ export const GLOBAL: GlobalSite = {
   author: "Domain Name Plus",
   authorPhotoSrc: "/logo.gif",
   logo: {
-    darkThemeSrc: "/logo/www.svg",
-    lightThemeSrc: "/logo/www.svg",
+    darkThemeSrc: "/www.svg",
+    lightThemeSrc: "/www.svg",
   }
 };
 
