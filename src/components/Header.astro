@@ -7,9 +7,6 @@ import { GLOBAL } from "@consts";
 const anyBlogPosts =
   (await getFilteredCollectionEntries("blog")).entries.length > 0;
 
-const anydomainname =
-  (await getFilteredCollectionEntries("domainname")).entries.length > 0;
-
 const anyTalks =
   (await getFilteredCollectionEntries("talks")).entries.length > 0;
 
