@@ -1,6 +1,19 @@
 # Astro Milidev
 
-![Astro Milidev Banner](./public/projects/astro-milidev/astro-milidev-banner.png)
+src/components/Header.astro 导航链接
+
+/astro.config.mjs 主题 域名路径
+
+src/consts.ts  logo title  author
+
+src/components/Bio.astro 首页欢迎页面 修改
+
+src/pages/index.astro  主页修改显示
+
+src/content 文章
+
+src/content/talks 页面
+
 
 <div style="text-align: center;">
 
