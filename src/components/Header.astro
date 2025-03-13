@@ -7,6 +7,9 @@ import { GLOBAL } from "@consts";
 const anyBlogPosts =
   (await getFilteredCollectionEntries("blog")).entries.length > 0;
 
+const anydomainname =
+  (await getFilteredCollectionEntries("domainname")).entries.length > 0;
+
 const anyTalks =
   (await getFilteredCollectionEntries("talks")).entries.length > 0;
 
@@ -30,11 +33,13 @@ const anyProjects =
         }
       </TextLink>
       <nav class="flex items-center gap-1 text-sm">
-        <TextLink href={resolvePath("/hire-me", Astro.url.pathname)}
-          >hire me</TextLink
+<!-- Domains -->
+        <TextLink href={resolvePath("/domains", Astro.url.pathname)}
+          >Domains</TextLink
         >
         {" "}
-        {
+<!-- blog -->
+<!--  {
           anyBlogPosts && (
             <>
               <span>{`|`}</span>
@@ -43,8 +48,9 @@ const anyProjects =
               </TextLink>
             </>
           )
-        }
-        {
+        }  -->
+<!-- talks -->
+<!--   {
           anyTalks && (
             <>
               <span>{`|`}</span>
@@ -53,8 +59,9 @@ const anyProjects =
               </TextLink>
             </>
           )
-        }
-        {
+        }  -->
+<!-- projects -->
+<!--   {
           anyProjects && (
             <>
               <span>{`|`}</span>
@@ -63,7 +70,9 @@ const anyProjects =
               </TextLink>
             </>
           )
-        }
+        }  -->
+<!-- Search -->
+<!-- 
         <span>{`|`}</span>
         <button
           id="magnifying-glass"
@@ -83,7 +92,8 @@ const anyProjects =
               fill="currentColor"></path></svg
           >
           &nbsp;search
-        </button>
+        </button>  -->
+<!-- Search -->
       </nav>
     </div>
   </Container>
