@@ -8,40 +8,37 @@ import { resolvePath } from "@lib/utils";
 const linkedInContact = CONTACT.find((contact) => contact.type === "LinkedIn");
 ---
 
-<RootPageIndex title="Hire me" searchable>
+<RootPageIndex title="Domain Name Plus" searchable>
   <div class="animate mb-4">
-    <p class="mb-1">The PDF resume:</p>
+    <p class="mb-1">Domains:</p>
     <section>
       <ArrowCardButton
-        href={resolvePath("/hire-me/milidev_resume.pdf", Astro.url.pathname)}
-        text="Download PDF"
-        openInNewTab
-      />
-    </section>
-  </div>
-  <div class="animate mb-4">
-    <p class="mb-1">The TXT resume:</p>
-    <section>
-      <ArrowCardButton
-        href={resolvePath("/hire-me/milidev_resume.txt", Astro.url.pathname)}
-        text="Download TXT"
+        href={resolvePath("/talks/domains", Astro.url.pathname)}
+        text="Domains"
         openInNewTab
       />
     </section>
   </div>
 
-  {
-    linkedInContact && (
-      <div class="animate mb-4">
-        <p class="mb-1">Or you can check my LinkedIn profile:</p>
-        <section>
-          <ArrowCardButton
-            href={linkedInContact.href}
-            text="Navigate to LinkedIn"
-            openInNewTab
-          />
-        </section>
-      </div>
-    )
-  }
+  <div class="animate mb-4">
+    <p class="mb-1">Domain Name Book Mark:</p>
+    <section>
+      <ArrowCardButton
+        href={resolvePath("/talks/domainnamebookmark", Astro.url.pathname)}
+        text="Domain Name Book Mark"
+        openInNewTab
+      />
+    </section>
+  </div>
+
+  <div class="animate mb-4">
+    <p class="mb-1">Domain Name Plus:</p>
+    <section>
+      <ArrowCardButton
+        href={resolvePath("/talks/domainnameplus", Astro.url.pathname)}
+        text="Domain Name Plus"
+        openInNewTab
+      />
+    </section>
+  </div>
 </RootPageIndex>
