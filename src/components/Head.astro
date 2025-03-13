@@ -29,7 +29,7 @@ interface Props {
   ogImage?: string;
 }
 
-const { title, description, ogImage = "/og-image.png" } = Astro.props;
+const { title, description, ogImage = "/logo.svg" } = Astro.props;
 
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 
