@@ -13,7 +13,7 @@ export type GlobalSite = {
 };
 
 export const GLOBAL: GlobalSite = {
-  title: "DomainName.Plus",
+title: "DomainName.Plus",
   description: "domains for sale",
   author: "Domain Name Plus",
   authorPhotoSrc: "/logo.gif",
@@ -78,11 +78,16 @@ type ContactSite = ContactInfo[]
 export const CONTACT: ContactSite = [
   {
     type: "Email",
-    href: "mailto:hello@domainname.plus",
-    displayAs: "Hello@DomainName.Plus",
+    href: "mailto:Hello@domainname.plus",
+    displayAs: "Hello#DomainName.Plus",
+  },
+  {
+    type: "X",
+    href: "https://x.com/username",
+    displayAs: "@username",
   },
   {
     type: "GitHub",
-    href: "https://github.com/",
-  }, 
-];‬
+    href: "https://github.com/username",
+  },
+];
