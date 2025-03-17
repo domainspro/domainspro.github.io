@@ -86,7 +86,7 @@ export const CONTACT: ContactSite = [
     href: "https://github.com/",
   }, 
   {
-    type: "WeChat",DomainsPro
+    type: "WeChat;DomainsPro",
     href: "https://www.wechat.com/",
   }, 
-];
+];‬
