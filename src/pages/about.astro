@@ -1,0 +1,58 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/Container.astro";
+import BackToPrevious from "@components/BackToPrevious.astro";
+import { resolvePath } from "@lib/utils";
+---
+
+<Layout title="About ">
+  <Container>
+    <div class="mt-16 grid place-items-center gap-3">
+      <h4 class="animate text-2xl font-semibold text-black dark:text-white"> about me </h4>
+<!-- Dark light  -->
+<p>Contact the author of this page:</p>
+<address>
+  <a href="mailto:jim@example.com">jim@example.com</a><br />
+  <a href="tel:+100000000000">+1 (000) 000‑00000</a>
+</address>
+
+<details>
+  <summary>Details</summary>
+  Something small enough to escape casual notice.
+</details>
+
+<div>
+article {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: #45a1ff;
+  color: #fff;
+}
+</div>
+<article>
+  <h1>How to be a wizard</h1>
+  <ol>
+    <li>Grow a long, majestic beard.</li>
+    <li>Wear a tall, pointed hat.</li>
+    <li>Have I mentioned the beard?</li>
+  </ol>
+  <footer>
+    <p>© 2025 Gandalf</p>
+  </footer>
+</article>
+
+
+
+      <span class="animate">
+        <BackToPrevious href={resolvePath("/")}>Go to Home Page</BackToPrevious>
+      </span>
+    </div>
+  </Container>
+</Layout>
