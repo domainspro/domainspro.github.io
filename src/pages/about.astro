@@ -4,11 +4,11 @@ import Container from "@components/Container.astro";
 import BackToPrevious from "@components/BackToPrevious.astro";
 import { resolvePath } from "@lib/utils";
 ---
-
+<!-- about -->
 <Layout title="about ">
   <Container>
     <div class="mt-16 grid place-items-center gap-3">
-      <h4 class="animate text-2xl font-semibold text-black dark:text-white"> about me </h4>
+  <h1>about me</h1>
 <!-- Dark light  -->
 <p>Contact the author of this page:</p>
 <address>
@@ -16,21 +16,8 @@ import { resolvePath } from "@lib/utils";
   <a href="tel:+100000000000">+1 (000) 000‑00000</a>
 </address>
 
-<details>
-  <summary>Details</summary>
-  Something small enough to escape casual notice.
-</details>
-<!-- css -->
-<!-- <style>
-article {
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-}
-</style> -->
-
 <article>
-  <h1>How to be a wizard</h1>
+<h4 class="animate text-2xl font-semibold text-black dark:text-white"> How to be a wizard </h4>
   <ol>
     <li>Grow a long, majestic beard.</li>
     <li>Wear a tall, pointed hat.</li>
@@ -39,11 +26,10 @@ article {
 
 </article>
 
-
-
       <span class="animate">
         <BackToPrevious href={resolvePath("/")}>Go to Home Page</BackToPrevious>
       </span>
+
     </div>
   </Container>
 </Layout>
