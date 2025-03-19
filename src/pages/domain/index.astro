@@ -1,0 +1,47 @@
+---
+import ArrowCardButton from "@components/ArrowCardButton.astro";
+import RootPageIndex from "@components/RootPageIndex.astro";
+
+import { CONTACT } from "@consts";
+import { resolvePath } from "@lib/utils";
+
+const linkedInContact = CONTACT.find((contact) => contact.type === "LinkedIn");
+---
+
+<RootPageIndex title="Domains" searchable>
+    <!-- Domain table  -->
+  <div class="animate mb-4">
+    <p class="mb-1">Domain:</p>
+    <section>
+      <ArrowCardButton
+        href={resolvePath("/talks/domain", Astro.url.pathname)}
+        text="Domains"
+        openInNewTab
+      />
+    </section>
+  </div>
+ <!-- Domain table  -->
+  <table>
+    <thead>
+      <tr>
+        <th>列标题1</th>
+        <th>列标题2</th>
+        <th>列标题3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>行1，列1</td>
+        <td>行1，列2</td>
+        <td>行1，列3</td>
+      </tr>
+      <tr>
+        <td>行2，列1</td>
+        <td>行2，列2</td>
+        <td>行2，列3</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+</RootPageIndex>
