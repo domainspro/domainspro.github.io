@@ -1,4 +1,4 @@
-export type CollectionName = "blog" | "projects" | "domains" | "talks";
+export type CollectionName = "blog" | "projects" | "talks";
 
 
 export type GlobalSite = {
